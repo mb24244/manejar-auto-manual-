@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Aprende a Manejar Auto Manual!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>🚗 ¡Escuela de Conducción para Niños! 🏎️</h1>
+    <p>Aprende cómo funcionan los 3 pedales y la palanca de cambios.</p>
+  </header>
+
+  <main class="game-container">
+    
+    <!-- Tablero del Auto -->
+    <section class="dashboard">
+      <div class="meter">
+        <h2>Velocidad: <span id="speed">0</span> km/h</h2>
+      </div>
+      <div class="meter">
+        <h2>Marcha (Cambio): <span id="gear">N (Neutro)</span></h2>
+      </div>
+      <div class="status-box">
+        <p id="feedback">¡Presiona el embrague/clutch para empezar!</p>
+      </div>
+    </section>
+
+    <!-- Pista de Pruebas -->
+    <section class="track">
+      <div id="car">🏎️</div>
+    </section>
+
+    <!-- Controles Interactivos -->
+    <section class="controls">
+      
+      <!-- Pedales -->
+      <div class="pedals-container">
+        <button id="clutch-btn" class="pedal clutch">
+          ⚙️ Clutch / Embrague<br><small>(Izquierda)</small>
+        </button>
+        <button id="brake-btn" class="pedal brake">
+          🛑 Freno<br><small>(Centro)</small>
+        </button>
+        <button id="gas-btn" class="pedal gas">
+          🚀 Acelerador<br><small>(Derecha)</small>
+        </button>
+      </div>
+
+      <!-- Palanca de Cambios -->
+      <div class="gearbox">
+        <h3>Palanca de Cambios</h3>
+        <div class="gear-buttons">
+          <button onclick="changeGear('N')">N</button>
+          <button onclick="changeGear('1')">1ª</button>
+          <button onclick="changeGear('2')">2ª</button>
+          <button onclick="changeGear('3')">3ª</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Explicación Educativa -->
+    <section class="guide">
+      <h3>💡 Reglas de Oro para Manejar Manual:</h3>
+      <ul>
+        <li><strong>Clutch (Embrague):</strong> ¡Písalo siempre ANTES de poner o cambiar una marcha!</li>
+        <li><strong>Primera (1ª):</strong> Sirve para arrancar cuando el auto está detenido.</li>
+        <li><strong> segunda (2ª):</strong> nivel de potencia medio <li>
+       <li><strong>Acelerador:</strong> Písalo suavemente después de soltar el clutch para avanzar.</li>
+        <li><strong>Freno:</strong> Reduce la velocidad o detiene el auto.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
